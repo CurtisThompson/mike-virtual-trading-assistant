@@ -1,0 +1,56 @@
+.root {
+	-fx-background-color: #383838;
+}
+
+.button {
+	-fx-background-color: #65f442;
+}
+
+.status-bar {
+	-fx-background-color: #336699;
+}
+
+.feed-message {
+	-fx-background-radius: 10px;
+	-fx-background-color: #3eefec;
+	-fx-padding: 5px;
+}
+
+.feed-response {
+	-fx-background-radius: 10px;
+	-fx-background-color: #deedec;
+	-fx-padding: 5px;
+}
+
+.feed-response-article-title {
+	-fx-background-radius: 10px 10px 0px 0px;
+	-fx-background-color: #deedec;
+	-fx-padding: 7px;
+	-fx-font-weight: bold;
+	-fx-color: black;
+}
+
+.feed-response-article-description {
+	-fx-background-radius: 0px 0px 0px 0px;
+	-fx-background-color: #deedec;
+	-fx-padding: 5px;
+}
+
+.feed-response-article-date {
+    -fx-background-radius: 0px 0px 10px 10px;
+    -fx-background-color: #deedec;
+    -fx-padding: 0px 5px 5px 5px;
+    -fx-text-fill: grey;
+    text-align: right;
+}
+
+.textfield {
+	-fx-background-color: #6699BB;
+}
+
+.button {
+	-fx-background-color: #3eefec;
+}
+
+
+/*TODO add text inheriting message-user message-response classes*/

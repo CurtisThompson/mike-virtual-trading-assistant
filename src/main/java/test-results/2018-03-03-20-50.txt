@@ -1,0 +1,1426 @@
+
+-------------------------
+databaseController Tests
+-------------------------
+     db001: Adding a new stock normally (addStock)
+     Test Passed.
+
+     db002: Ticker already exists (addStock)
+     Test Failed.
+
+     db003: Adding a new stock to a new sector (addStock)
+     Test Passed.
+
+     db004: Ticker is empty (addStock)
+     Test Failed.
+
+     db005: Sector is empty (addStock)
+     Test Failed.
+
+     db006: Stock is empty (addStock)
+     Test Failed.
+
+     db007: New sector added normally (addSector)
+     Test Passed.
+
+     db008: Sector is empty (addSector)
+     Test Failed.
+
+     db009: Sector already exists (addSector)
+     Test Passed.
+
+[SQLITE_CONSTRAINT_NOTNULL]  A NOT NULL constraint failed (NOT NULL constraint failed: stock_history.StockId)
+     db010: Add stock history (addStockHistory))
+     Test Passed.
+
+     db011: Obtain a stock from the database (getStock)
+     Test Passed.
+
+     db012: Obtained stock from database has price set (getStock)
+     Test Passed.
+
+     db013: Obtained stock from database has price change set (getStock)
+     Test Passed.
+
+     db014: Obtained stock from database has percent change set (getStock)
+     Test Passed.
+
+     db015: Obtained stock from database has ticker set (getStock)
+     Test Passed.
+
+     db016: Obtain a sector from the database (getSector)
+     Test Passed.
+
+     db017: Obtained sector from database has price set (getSector)
+     Test Passed.
+
+     db018: Obtained sector from database has price change set (getSector)
+     Test Failed.
+
+     db019: Obtained sector from database has percent change set (getSector)
+     Test Passed.
+
+     db020: Can retrieve all stocks in a sector (getSectorStocks)
+     Test Passed.
+
+     db021: Can retrieve all stocks in a sector (attempt 2) (getSectorStocks)
+     Test Passed.
+
+     db022: Can retrieve all stocks in a sector (attempt 3) (getSectorStocks)
+     Test Passed.
+
+     db023: Get ticker of a stock (getTicker)
+     Test Passed.
+
+
+-------------------------
+chatBot Tests
+-------------------------
+     cb001: Obtaining news for a stock (stockNews)
+     Test Passed.
+
+     cb002: Obtaining news for a stock that does not exist (stockNews)
+     Test Failed.
+
+     cb003: Obtaining news for a sector (sectorNews)
+     Test Passed.
+
+     cb004: Obtaining news for a sector that does not exist (sectorNews)
+     Test Failed.
+
+     cb005: Get the percentage change for a sector (percentageChange)
+     Test Passed.
+
+BARC Barclays 205.3 -5.95 -2.82
+     cb006: Get the percentage change for a stock (percentageChange)
+     Test Passed.
+
+     cb007: Get the price for a sector (currentPrice)
+     Test Passed.
+
+     cb008: Get the price for a stock (currentPrice)
+     Test Passed.
+
+     cb009: Get the price change for a sector (priceChange)
+     Test Passed.
+
+     cb010: Get the price change for a stock (priceChange)
+     Test Passed.
+
+     cb011: The stock summary contains stock information (stockSummary)
+     Test Passed.
+
+     cb012: The stock summary contains stock news (stockSummary)
+     Test Passed.
+
+     cb013: Get news on a stock (stockNews)
+     Test Passed.
+
+     cb014: Get news on a sector (sectorNews)
+     Test Passed.
+
+     cb015: A query can be executed (executeAction)
+     Test Passed.
+
+     cb016: The stock summary contains stock information (checkMajorChanges)
+     Test Passed.
+
+
+-------------------------
+Stock And Sector Tests
+-------------------------
+     ss001: getTicker
+     Test Passed.
+
+     ss002: getName
+     Test Passed.
+
+     ss003: getCurrentPrice (906.0)
+     Test Passed.
+
+     ss004: getPriceChange (-18.2)
+     Test Passed.
+
+     ss005: getPercentChange (-1.97)
+     Test Passed.
+
+     ss006: getCurrentPrice (2343.4)
+     Test Passed.
+
+     ss007: getPriceChange (0.0)
+     Test Failed.
+
+     ss008: getPercentChange (-2.1164794680188947)
+     Test Passed.
+
+     ss009: getName
+     Test Passed.
+
+     ss010: getTicker (attempt 2)
+     Test Passed.
+
+     ss011: getName (attempt 2)
+     Test Passed.
+
+     ss012: getCurrentPrice (497.5) (attempt 2)
+     Test Passed.
+
+     ss013: getPriceChange (-7.1) (attempt 2)
+     Test Passed.
+
+     ss014: getPercentChange (-1.41) (attempt 2)
+     Test Passed.
+
+     ss015: getCurrentPrice (15083.3) (attempt 2)
+     Test Passed.
+
+     ss016: getPriceChange (0.0) (attempt 2)
+     Test Failed.
+
+     ss017: getPercentChange (-0.5626736723439496) (attempt 2)
+     Test Passed.
+
+     ss018: getName (attempt 2)
+     Test Passed.
+
+
+-------------------------
+Names Tests
+-------------------------
+     na000: 3i Group can be queried (executeAction)
+     Test Passed.
+
+     na001: 3I GROUP can be queried (executeAction)
+     Test Passed.
+
+     na002: 3i group can be queried (executeAction)
+     Test Passed.
+
+     na003: Associated British Food can be queried (executeAction)
+     Test Passed.
+
+     na004: ASSOCIATED BRITISH FOOD can be queried (executeAction)
+     Test Passed.
+
+     na005: associated british food can be queried (executeAction)
+     Test Passed.
+
+     na006: Admiral can be queried (executeAction)
+     Test Passed.
+
+     na007: ADMIRAL can be queried (executeAction)
+     Test Passed.
+
+     na008: admiral can be queried (executeAction)
+     Test Passed.
+
+     na009: Anglo American can be queried (executeAction)
+     Test Passed.
+
+     na010: ANGLO AMERICAN can be queried (executeAction)
+     Test Passed.
+
+     na011: anglo american can be queried (executeAction)
+     Test Passed.
+
+     na012: Antofagasta can be queried (executeAction)
+     Test Passed.
+
+     na013: ANTOFAGASTA can be queried (executeAction)
+     Test Passed.
+
+     na014: antofagasta can be queried (executeAction)
+     Test Passed.
+
+     na015: Ashtead Group can be queried (executeAction)
+     Test Passed.
+
+     na016: ASHTEAD GROUP can be queried (executeAction)
+     Test Passed.
+
+     na017: ashtead group can be queried (executeAction)
+     Test Passed.
+
+     na018: Astrazeneca can be queried (executeAction)
+     Test Passed.
+
+     na019: ASTRAZENECA can be queried (executeAction)
+     Test Passed.
+
+     na020: astrazeneca can be queried (executeAction)
+     Test Passed.
+
+     na021: Aviva can be queried (executeAction)
+     Test Passed.
+
+     na022: AVIVA can be queried (executeAction)
+     Test Passed.
+
+     na023: aviva can be queried (executeAction)
+     Test Passed.
+
+     na024: BAE Systems can be queried (executeAction)
+     Test Passed.
+
+     na025: BAE SYSTEMS can be queried (executeAction)
+     Test Passed.
+
+     na026: bae systems can be queried (executeAction)
+     Test Passed.
+
+     na027: Barclays can be queried (executeAction)
+     Test Passed.
+
+     na028: BARCLAYS can be queried (executeAction)
+     Test Passed.
+
+     na029: barclays can be queried (executeAction)
+     Test Passed.
+
+     na030: Barratt Developments can be queried (executeAction)
+     Test Passed.
+
+     na031: BARRATT DEVELOPMENTS can be queried (executeAction)
+     Test Passed.
+
+     na032: barratt developments can be queried (executeAction)
+     Test Passed.
+
+     na033: Berkeley GP.Hld can be queried (executeAction)
+     Test Passed.
+
+     na034: BERKELEY GP.HLD can be queried (executeAction)
+     Test Passed.
+
+     na035: berkeley gp.hld can be queried (executeAction)
+     Test Passed.
+
+     na036: BHP Billiton can be queried (executeAction)
+     Test Passed.
+
+     na037: BHP BILLITON can be queried (executeAction)
+     Test Passed.
+
+     na038: bhp billiton can be queried (executeAction)
+     Test Passed.
+
+     na039: BP can be queried (executeAction)
+     Test Passed.
+
+     na040: BP can be queried (executeAction)
+     Test Passed.
+
+     na041: bp can be queried (executeAction)
+     Test Passed.
+
+     na042: British American Tobacco can be queried (executeAction)
+     Test Passed.
+
+     na043: BRITISH AMERICAN TOBACCO can be queried (executeAction)
+     Test Passed.
+
+     na044: british american tobacco can be queried (executeAction)
+     Test Passed.
+
+     na045: British Land can be queried (executeAction)
+     Test Passed.
+
+     na046: BRITISH LAND can be queried (executeAction)
+     Test Passed.
+
+     na047: british land can be queried (executeAction)
+     Test Passed.
+
+     na048: BT Group can be queried (executeAction)
+     Test Passed.
+
+     na049: BT GROUP can be queried (executeAction)
+     Test Passed.
+
+     na050: bt group can be queried (executeAction)
+     Test Passed.
+
+     na051: Bunzl can be queried (executeAction)
+     Test Passed.
+
+     na052: BUNZL can be queried (executeAction)
+     Test Passed.
+
+     na053: bunzl can be queried (executeAction)
+     Test Passed.
+
+     na054: Burberry Group can be queried (executeAction)
+     Test Passed.
+
+     na055: BURBERRY GROUP can be queried (executeAction)
+     Test Passed.
+
+     na056: burberry group can be queried (executeAction)
+     Test Passed.
+
+     na057: Carnival can be queried (executeAction)
+     Test Passed.
+
+     na058: CARNIVAL can be queried (executeAction)
+     Test Passed.
+
+     na059: carnival can be queried (executeAction)
+     Test Passed.
+
+     na060: Centrica can be queried (executeAction)
+     Test Passed.
+
+     na061: CENTRICA can be queried (executeAction)
+     Test Passed.
+
+     na062: centrica can be queried (executeAction)
+     Test Passed.
+
+     na063: Cocacola can be queried (executeAction)
+     Test Passed.
+
+     na064: COCACOLA can be queried (executeAction)
+     Test Passed.
+
+     na065: cocacola can be queried (executeAction)
+     Test Passed.
+
+     na066: Compass Group can be queried (executeAction)
+     Test Passed.
+
+     na067: COMPASS GROUP can be queried (executeAction)
+     Test Passed.
+
+     na068: compass group can be queried (executeAction)
+     Test Passed.
+
+     na069: CRH can be queried (executeAction)
+     Test Passed.
+
+     na070: CRH can be queried (executeAction)
+     Test Passed.
+
+     na071: crh can be queried (executeAction)
+     Test Passed.
+
+     na072: Croda International can be queried (executeAction)
+     Test Passed.
+
+     na073: CRODA INTERNATIONAL can be queried (executeAction)
+     Test Passed.
+
+     na074: croda international can be queried (executeAction)
+     Test Passed.
+
+     na075: DCC can be queried (executeAction)
+     Test Passed.
+
+     na076: DCC can be queried (executeAction)
+     Test Passed.
+
+     na077: dcc can be queried (executeAction)
+     Test Passed.
+
+     na078: Diageo can be queried (executeAction)
+     Test Passed.
+
+     na079: DIAGEO can be queried (executeAction)
+     Test Passed.
+
+     na080: diageo can be queried (executeAction)
+     Test Passed.
+
+     na081: Direct Line can be queried (executeAction)
+     Test Passed.
+
+     na082: DIRECT LINE can be queried (executeAction)
+     Test Passed.
+
+     na083: direct line can be queried (executeAction)
+     Test Passed.
+
+     na084: Easyjet can be queried (executeAction)
+     Test Passed.
+
+     na085: EASYJET can be queried (executeAction)
+     Test Passed.
+
+     na086: easyjet can be queried (executeAction)
+     Test Passed.
+
+     na087: Evraz can be queried (executeAction)
+     Test Passed.
+
+     na088: EVRAZ can be queried (executeAction)
+     Test Passed.
+
+     na089: evraz can be queried (executeAction)
+     Test Passed.
+
+     na090: Experian can be queried (executeAction)
+     Test Passed.
+
+     na091: EXPERIAN can be queried (executeAction)
+     Test Passed.
+
+     na092: experian can be queried (executeAction)
+     Test Passed.
+
+     na093: Ferguson can be queried (executeAction)
+     Test Passed.
+
+     na094: FERGUSON can be queried (executeAction)
+     Test Passed.
+
+     na095: ferguson can be queried (executeAction)
+     Test Passed.
+
+     na096: Fresnillo can be queried (executeAction)
+     Test Passed.
+
+     na097: FRESNILLO can be queried (executeAction)
+     Test Passed.
+
+     na098: fresnillo can be queried (executeAction)
+     Test Passed.
+
+     na099: G4S can be queried (executeAction)
+     Test Passed.
+
+     na100: G4S can be queried (executeAction)
+     Test Passed.
+
+     na101: g4s can be queried (executeAction)
+     Test Passed.
+
+     na102: GKN can be queried (executeAction)
+     Test Passed.
+
+     na103: GKN can be queried (executeAction)
+     Test Passed.
+
+     na104: gkn can be queried (executeAction)
+     Test Passed.
+
+     na105: Glaxosmithkline can be queried (executeAction)
+     Test Passed.
+
+     na106: GLAXOSMITHKLINE can be queried (executeAction)
+     Test Passed.
+
+     na107: glaxosmithkline can be queried (executeAction)
+     Test Passed.
+
+     na108: Glencore can be queried (executeAction)
+     Test Passed.
+
+     na109: GLENCORE can be queried (executeAction)
+     Test Passed.
+
+     na110: glencore can be queried (executeAction)
+     Test Passed.
+
+     na111: Halma can be queried (executeAction)
+     Test Passed.
+
+     na112: HALMA can be queried (executeAction)
+     Test Passed.
+
+     na113: halma can be queried (executeAction)
+     Test Passed.
+
+     na114: Hammerson can be queried (executeAction)
+     Test Passed.
+
+     na115: HAMMERSON can be queried (executeAction)
+     Test Passed.
+
+     na116: hammerson can be queried (executeAction)
+     Test Passed.
+
+     na117: Hargreaves Lansdown can be queried (executeAction)
+     Test Passed.
+
+     na118: HARGREAVES LANSDOWN can be queried (executeAction)
+     Test Passed.
+
+     na119: hargreaves lansdown can be queried (executeAction)
+     Test Passed.
+
+     na120: HSBC can be queried (executeAction)
+     Test Passed.
+
+     na121: HSBC can be queried (executeAction)
+     Test Passed.
+
+     na122: hsbc can be queried (executeAction)
+     Test Passed.
+
+     na123: Imperial Brands can be queried (executeAction)
+     Test Passed.
+
+     na124: IMPERIAL BRANDS can be queried (executeAction)
+     Test Passed.
+
+     na125: imperial brands can be queried (executeAction)
+     Test Passed.
+
+     na126: Informa can be queried (executeAction)
+     Test Passed.
+
+     na127: INFORMA can be queried (executeAction)
+     Test Passed.
+
+     na128: informa can be queried (executeAction)
+     Test Passed.
+
+     na129: Intercontinental Hotels can be queried (executeAction)
+     Test Passed.
+
+     na130: INTERCONTINENTAL HOTELS can be queried (executeAction)
+     Test Passed.
+
+     na131: intercontinental hotels can be queried (executeAction)
+     Test Passed.
+
+     na132: Intertek Group can be queried (executeAction)
+     Test Passed.
+
+     na133: INTERTEK GROUP can be queried (executeAction)
+     Test Passed.
+
+     na134: intertek group can be queried (executeAction)
+     Test Passed.
+
+     na135: Intl Consol Air can be queried (executeAction)
+     Test Passed.
+
+     na136: INTL CONSOL AIR can be queried (executeAction)
+     Test Passed.
+
+     na137: intl consol air can be queried (executeAction)
+     Test Passed.
+
+     na138: ITV can be queried (executeAction)
+     Test Passed.
+
+     na139: ITV can be queried (executeAction)
+     Test Passed.
+
+     na140: itv can be queried (executeAction)
+     Test Passed.
+
+     na141: Johnson Matthey can be queried (executeAction)
+     Test Passed.
+
+     na142: JOHNSON MATTHEY can be queried (executeAction)
+     Test Passed.
+
+     na143: johnson matthey can be queried (executeAction)
+     Test Passed.
+
+     na144: Just Eat can be queried (executeAction)
+     Test Passed.
+
+     na145: JUST EAT can be queried (executeAction)
+     Test Passed.
+
+     na146: just eat can be queried (executeAction)
+     Test Passed.
+
+     na147: Kingfisher can be queried (executeAction)
+     Test Passed.
+
+     na148: KINGFISHER can be queried (executeAction)
+     Test Passed.
+
+     na149: kingfisher can be queried (executeAction)
+     Test Passed.
+
+     na150: Land Secs can be queried (executeAction)
+     Test Passed.
+
+     na151: LAND SECS can be queried (executeAction)
+     Test Passed.
+
+     na152: land secs can be queried (executeAction)
+     Test Passed.
+
+     na153: Legal and General can be queried (executeAction)
+     Test Passed.
+
+     na154: LEGAL AND GENERAL can be queried (executeAction)
+     Test Passed.
+
+     na155: legal and general can be queried (executeAction)
+     Test Passed.
+
+     na156: Lloyds can be queried (executeAction)
+     Test Failed.
+
+     na157: LLOYDS can be queried (executeAction)
+     Test Failed.
+
+     na158: lloyds can be queried (executeAction)
+     Test Failed.
+
+     na159: London Stock Exchange can be queried (executeAction)
+     Test Passed.
+
+     na160: LONDON STOCK EXCHANGE can be queried (executeAction)
+     Test Passed.
+
+     na161: london stock exchange can be queried (executeAction)
+     Test Passed.
+
+     na162: Marks and Spencer can be queried (executeAction)
+     Test Passed.
+
+     na163: MARKS AND SPENCER can be queried (executeAction)
+     Test Passed.
+
+     na164: marks and spencer can be queried (executeAction)
+     Test Passed.
+
+     na165: Mediclinic can be queried (executeAction)
+     Test Passed.
+
+     na166: MEDICLINIC can be queried (executeAction)
+     Test Passed.
+
+     na167: mediclinic can be queried (executeAction)
+     Test Passed.
+
+     na168: Micro Focus can be queried (executeAction)
+     Test Passed.
+
+     na169: MICRO FOCUS can be queried (executeAction)
+     Test Passed.
+
+     na170: micro focus can be queried (executeAction)
+     Test Passed.
+
+     na171: Mondi can be queried (executeAction)
+     Test Passed.
+
+     na172: MONDI can be queried (executeAction)
+     Test Passed.
+
+     na173: mondi can be queried (executeAction)
+     Test Passed.
+
+     na174: Morrison can be queried (executeAction)
+     Test Passed.
+
+     na175: MORRISON can be queried (executeAction)
+     Test Passed.
+
+     na176: morrison can be queried (executeAction)
+     Test Passed.
+
+     na177: National Grid can be queried (executeAction)
+     Test Passed.
+
+     na178: NATIONAL GRID can be queried (executeAction)
+     Test Passed.
+
+     na179: national grid can be queried (executeAction)
+     Test Passed.
+
+     na180: Next can be queried (executeAction)
+     Test Passed.
+
+     na181: NEXT can be queried (executeAction)
+     Test Passed.
+
+     na182: next can be queried (executeAction)
+     Test Passed.
+
+     na183: NMC Health can be queried (executeAction)
+     Test Passed.
+
+     na184: NMC HEALTH can be queried (executeAction)
+     Test Passed.
+
+     na185: nmc health can be queried (executeAction)
+     Test Passed.
+
+     na186: Old Mutual can be queried (executeAction)
+     Test Passed.
+
+     na187: OLD MUTUAL can be queried (executeAction)
+     Test Passed.
+
+     na188: old mutual can be queried (executeAction)
+     Test Passed.
+
+     na189: Paddy Power Betfair can be queried (executeAction)
+     Test Passed.
+
+     na190: PADDY POWER BETFAIR can be queried (executeAction)
+     Test Passed.
+
+     na191: paddy power betfair can be queried (executeAction)
+     Test Passed.
+
+     na192: Pearson can be queried (executeAction)
+     Test Passed.
+
+     na193: PEARSON can be queried (executeAction)
+     Test Passed.
+
+     na194: pearson can be queried (executeAction)
+     Test Passed.
+
+     na195: Persimmon can be queried (executeAction)
+     Test Passed.
+
+     na196: PERSIMMON can be queried (executeAction)
+     Test Passed.
+
+     na197: persimmon can be queried (executeAction)
+     Test Passed.
+
+     na198: Prudential can be queried (executeAction)
+     Test Passed.
+
+     na199: PRUDENTIAL can be queried (executeAction)
+     Test Passed.
+
+     na200: prudential can be queried (executeAction)
+     Test Passed.
+
+     na201: Randgold Resources can be queried (executeAction)
+     Test Passed.
+
+     na202: RANDGOLD RESOURCES can be queried (executeAction)
+     Test Passed.
+
+     na203: randgold resources can be queried (executeAction)
+     Test Passed.
+
+     na204: RDS A can be queried (executeAction)
+     Test Passed.
+
+     na205: RDS A can be queried (executeAction)
+     Test Passed.
+
+     na206: rds a can be queried (executeAction)
+     Test Passed.
+
+     na207: RDS B can be queried (executeAction)
+     Test Passed.
+
+     na208: RDS B can be queried (executeAction)
+     Test Passed.
+
+     na209: rds b can be queried (executeAction)
+     Test Passed.
+
+     na210: Reckitt Ben GP can be queried (executeAction)
+     Test Passed.
+
+     na211: RECKITT BEN GP can be queried (executeAction)
+     Test Passed.
+
+     na212: reckitt ben gp can be queried (executeAction)
+     Test Passed.
+
+     na213: Relx can be queried (executeAction)
+     Test Failed.
+
+     na214: RELX can be queried (executeAction)
+     Test Failed.
+
+     na215: relx can be queried (executeAction)
+     Test Failed.
+
+     na216: Rentokil HLG can be queried (executeAction)
+     Test Passed.
+
+     na217: RENTOKIL HLG can be queried (executeAction)
+     Test Passed.
+
+     na218: rentokil hlg can be queried (executeAction)
+     Test Passed.
+
+     na219: Rio Tinto can be queried (executeAction)
+     Test Passed.
+
+     na220: RIO TINTO can be queried (executeAction)
+     Test Passed.
+
+     na221: rio tinto can be queried (executeAction)
+     Test Passed.
+
+     na222: Rolls Royce can be queried (executeAction)
+     Test Passed.
+
+     na223: ROLLS ROYCE can be queried (executeAction)
+     Test Passed.
+
+     na224: rolls royce can be queried (executeAction)
+     Test Passed.
+
+     na225: Royal Bank of Scotland can be queried (executeAction)
+     Test Passed.
+
+     na226: ROYAL BANK OF SCOTLAND can be queried (executeAction)
+     Test Passed.
+
+     na227: royal bank of scotland can be queried (executeAction)
+     Test Passed.
+
+     na228: RSA Insurance can be queried (executeAction)
+     Test Passed.
+
+     na229: RSA INSURANCE can be queried (executeAction)
+     Test Passed.
+
+     na230: rsa insurance can be queried (executeAction)
+     Test Passed.
+
+     na231: Sage Group can be queried (executeAction)
+     Test Passed.
+
+     na232: SAGE GROUP can be queried (executeAction)
+     Test Passed.
+
+     na233: sage group can be queried (executeAction)
+     Test Passed.
+
+     na234: Sainsbury can be queried (executeAction)
+     Test Passed.
+
+     na235: SAINSBURY can be queried (executeAction)
+     Test Passed.
+
+     na236: sainsbury can be queried (executeAction)
+     Test Passed.
+
+     na237: Schroders can be queried (executeAction)
+     Test Passed.
+
+     na238: SCHRODERS can be queried (executeAction)
+     Test Passed.
+
+     na239: schroders can be queried (executeAction)
+     Test Passed.
+
+     na240: Scottish Mortgage Investment Trust can be queried (executeAction)
+     Test Passed.
+
+     na241: SCOTTISH MORTGAGE INVESTMENT TRUST can be queried (executeAction)
+     Test Passed.
+
+     na242: scottish mortgage investment trust can be queried (executeAction)
+     Test Passed.
+
+     na243: Segro can be queried (executeAction)
+     Test Passed.
+
+     na244: SEGRO can be queried (executeAction)
+     Test Passed.
+
+     na245: segro can be queried (executeAction)
+     Test Passed.
+
+     na246: Severn Trent can be queried (executeAction)
+     Test Passed.
+
+     na247: SEVERN TRENT can be queried (executeAction)
+     Test Passed.
+
+     na248: severn trent can be queried (executeAction)
+     Test Passed.
+
+     na249: Shire can be queried (executeAction)
+     Test Passed.
+
+     na250: SHIRE can be queried (executeAction)
+     Test Passed.
+
+     na251: shire can be queried (executeAction)
+     Test Passed.
+
+     na252: Sky PLC can be queried (executeAction)
+     Test Passed.
+
+     na253: SKY PLC can be queried (executeAction)
+     Test Passed.
+
+     na254: sky plc can be queried (executeAction)
+     Test Passed.
+
+     na255: Smith and Nephew can be queried (executeAction)
+     Test Passed.
+
+     na256: SMITH AND NEPHEW can be queried (executeAction)
+     Test Passed.
+
+     na257: smith and nephew can be queried (executeAction)
+     Test Passed.
+
+     na258: Smith DS can be queried (executeAction)
+     Test Passed.
+
+     na259: SMITH DS can be queried (executeAction)
+     Test Passed.
+
+     na260: smith ds can be queried (executeAction)
+     Test Passed.
+
+     na261: Smiths Group can be queried (executeAction)
+     Test Passed.
+
+     na262: SMITHS GROUP can be queried (executeAction)
+     Test Passed.
+
+     na263: smiths group can be queried (executeAction)
+     Test Passed.
+
+     na264: Smurfit Kap can be queried (executeAction)
+     Test Passed.
+
+     na265: SMURFIT KAP can be queried (executeAction)
+     Test Passed.
+
+     na266: smurfit kap can be queried (executeAction)
+     Test Passed.
+
+     na267: SSE can be queried (executeAction)
+     Test Passed.
+
+     na268: SSE can be queried (executeAction)
+     Test Passed.
+
+     na269: sse can be queried (executeAction)
+     Test Passed.
+
+     na270: St James Place can be queried (executeAction)
+     Test Failed.
+
+     na271: ST JAMES PLACE can be queried (executeAction)
+     Test Failed.
+
+     na272: st james place can be queried (executeAction)
+     Test Failed.
+
+     na273: Standard Chartered can be queried (executeAction)
+     Test Passed.
+
+     na274: STANDARD CHARTERED can be queried (executeAction)
+     Test Passed.
+
+     na275: standard chartered can be queried (executeAction)
+     Test Passed.
+
+     na276: Std Life Aberdeen can be queried (executeAction)
+     Test Passed.
+
+     na277: STD LIFE ABERDEEN can be queried (executeAction)
+     Test Passed.
+
+     na278: std life aberdeen can be queried (executeAction)
+     Test Passed.
+
+     na279: Taylor Wimpey can be queried (executeAction)
+     Test Passed.
+
+     na280: TAYLOR WIMPEY can be queried (executeAction)
+     Test Passed.
+
+     na281: taylor wimpey can be queried (executeAction)
+     Test Passed.
+
+     na282: Tesco can be queried (executeAction)
+     Test Passed.
+
+     na283: TESCO can be queried (executeAction)
+     Test Passed.
+
+     na284: tesco can be queried (executeAction)
+     Test Passed.
+
+     na285: TUI AG can be queried (executeAction)
+     Test Passed.
+
+     na286: TUI AG can be queried (executeAction)
+     Test Passed.
+
+     na287: tui ag can be queried (executeAction)
+     Test Passed.
+
+     na288: Unilever can be queried (executeAction)
+     Test Passed.
+
+     na289: UNILEVER can be queried (executeAction)
+     Test Passed.
+
+     na290: unilever can be queried (executeAction)
+     Test Passed.
+
+     na291: United Utilities can be queried (executeAction)
+     Test Passed.
+
+     na292: UNITED UTILITIES can be queried (executeAction)
+     Test Passed.
+
+     na293: united utilities can be queried (executeAction)
+     Test Passed.
+
+     na294: Vodafone Group can be queried (executeAction)
+     Test Passed.
+
+     na295: VODAFONE GROUP can be queried (executeAction)
+     Test Passed.
+
+     na296: vodafone group can be queried (executeAction)
+     Test Passed.
+
+     na297: Whitbread can be queried (executeAction)
+     Test Passed.
+
+     na298: WHITBREAD can be queried (executeAction)
+     Test Passed.
+
+     na299: whitbread can be queried (executeAction)
+     Test Passed.
+
+     na300: WPP can be queried (executeAction)
+     Test Passed.
+
+     na301: WPP can be queried (executeAction)
+     Test Passed.
+
+     na302: wpp can be queried (executeAction)
+     Test Passed.
+
+     na303: Aerospace and Defence can be queried (executeAction)
+     Test Passed.
+
+     na304: AEROSPACE AND DEFENCE can be queried (executeAction)
+     Test Passed.
+
+     na305: aerospace and defence can be queried (executeAction)
+     Test Passed.
+
+     na306: Automobiles and Parts can be queried (executeAction)
+     Test Passed.
+
+     na307: AUTOMOBILES AND PARTS can be queried (executeAction)
+     Test Passed.
+
+     na308: automobiles and parts can be queried (executeAction)
+     Test Passed.
+
+     na309: Banks can be queried (executeAction)
+     Test Passed.
+
+     na310: BANKS can be queried (executeAction)
+     Test Passed.
+
+     na311: banks can be queried (executeAction)
+     Test Passed.
+
+     na312: Beverages can be queried (executeAction)
+     Test Passed.
+
+     na313: BEVERAGES can be queried (executeAction)
+     Test Passed.
+
+     na314: beverages can be queried (executeAction)
+     Test Passed.
+
+     na315: Chemicals can be queried (executeAction)
+     Test Passed.
+
+     na316: CHEMICALS can be queried (executeAction)
+     Test Passed.
+
+     na317: chemicals can be queried (executeAction)
+     Test Passed.
+
+     na318: Construction and Materials can be queried (executeAction)
+     Test Passed.
+
+     na319: CONSTRUCTION AND MATERIALS can be queried (executeAction)
+     Test Passed.
+
+     na320: construction and materials can be queried (executeAction)
+     Test Passed.
+
+     na321: Electricity can be queried (executeAction)
+     Test Passed.
+
+     na322: ELECTRICITY can be queried (executeAction)
+     Test Passed.
+
+     na323: electricity can be queried (executeAction)
+     Test Passed.
+
+     na324: Electronic and Electrical Equipment can be queried (executeAction)
+     Test Passed.
+
+     na325: ELECTRONIC AND ELECTRICAL EQUIPMENT can be queried (executeAction)
+     Test Passed.
+
+     na326: electronic and electrical equipment can be queried (executeAction)
+     Test Passed.
+
+     na327: Financial Services can be queried (executeAction)
+     Test Passed.
+
+     na328: FINANCIAL SERVICES can be queried (executeAction)
+     Test Passed.
+
+     na329: financial services can be queried (executeAction)
+     Test Passed.
+
+     na330: Fixed Line Telecommunications can be queried (executeAction)
+     Test Passed.
+
+     na331: FIXED LINE TELECOMMUNICATIONS can be queried (executeAction)
+     Test Passed.
+
+     na332: fixed line telecommunications can be queried (executeAction)
+     Test Passed.
+
+     na333: Food and Drug Retailers can be queried (executeAction)
+     Test Passed.
+
+     na334: FOOD AND DRUG RETAILERS can be queried (executeAction)
+     Test Passed.
+
+     na335: food and drug retailers can be queried (executeAction)
+     Test Passed.
+
+     na336: Food Producers can be queried (executeAction)
+     Test Passed.
+
+     na337: FOOD PRODUCERS can be queried (executeAction)
+     Test Passed.
+
+     na338: food producers can be queried (executeAction)
+     Test Passed.
+
+     na339: Forestry and Paper can be queried (executeAction)
+     Test Passed.
+
+     na340: FORESTRY AND PAPER can be queried (executeAction)
+     Test Passed.
+
+     na341: forestry and paper can be queried (executeAction)
+     Test Passed.
+
+     na342: Gas, Water and Multiutilities can be queried (executeAction)
+     Test Failed.
+
+     na343: GAS, WATER AND MULTIUTILITIES can be queried (executeAction)
+     Test Failed.
+
+     na344: gas, water and multiutilities can be queried (executeAction)
+     Test Failed.
+
+     na345: General Industries can be queried (executeAction)
+     Test Passed.
+
+     na346: GENERAL INDUSTRIES can be queried (executeAction)
+     Test Passed.
+
+     na347: general industries can be queried (executeAction)
+     Test Passed.
+
+     na348: General Retailers can be queried (executeAction)
+     Test Passed.
+
+     na349: GENERAL RETAILERS can be queried (executeAction)
+     Test Passed.
+
+     na350: general retailers can be queried (executeAction)
+     Test Passed.
+
+     na351: Health Care Equipment and Services can be queried (executeAction)
+     Test Passed.
+
+     na352: HEALTH CARE EQUIPMENT AND SERVICES can be queried (executeAction)
+     Test Passed.
+
+     na353: health care equipment and services can be queried (executeAction)
+     Test Passed.
+
+     na354: Household Goods and Home Construction can be queried (executeAction)
+     Test Passed.
+
+     na355: HOUSEHOLD GOODS AND HOME CONSTRUCTION can be queried (executeAction)
+     Test Passed.
+
+     na356: household goods and home construction can be queried (executeAction)
+     Test Passed.
+
+     na357: Industrial Metals and Mining can be queried (executeAction)
+     Test Passed.
+
+     na358: INDUSTRIAL METALS AND MINING can be queried (executeAction)
+     Test Passed.
+
+     na359: industrial metals and mining can be queried (executeAction)
+     Test Passed.
+
+     na360: Life Insurance can be queried (executeAction)
+     Test Passed.
+
+     na361: LIFE INSURANCE can be queried (executeAction)
+     Test Passed.
+
+     na362: life insurance can be queried (executeAction)
+     Test Passed.
+
+     na363: Media can be queried (executeAction)
+     Test Passed.
+
+     na364: MEDIA can be queried (executeAction)
+     Test Passed.
+
+     na365: media can be queried (executeAction)
+     Test Passed.
+
+     na366: Mining can be queried (executeAction)
+     Test Passed.
+
+     na367: MINING can be queried (executeAction)
+     Test Passed.
+
+     na368: mining can be queried (executeAction)
+     Test Passed.
+
+     na369: Mobile Telecommunications can be queried (executeAction)
+     Test Passed.
+
+     na370: MOBILE TELECOMMUNICATIONS can be queried (executeAction)
+     Test Passed.
+
+     na371: mobile telecommunications can be queried (executeAction)
+     Test Passed.
+
+     na372: Nonlife Insurance can be queried (executeAction)
+     Test Passed.
+
+     na373: NONLIFE INSURANCE can be queried (executeAction)
+     Test Passed.
+
+     na374: nonlife insurance can be queried (executeAction)
+     Test Passed.
+
+     na375: Oil and Gas Producers can be queried (executeAction)
+     Test Passed.
+
+     na376: OIL AND GAS PRODUCERS can be queried (executeAction)
+     Test Passed.
+
+     na377: oil and gas producers can be queried (executeAction)
+     Test Passed.
+
+     na378: Personal Goods can be queried (executeAction)
+     Test Passed.
+
+     na379: PERSONAL GOODS can be queried (executeAction)
+     Test Passed.
+
+     na380: personal goods can be queried (executeAction)
+     Test Passed.
+
+     na381: Pharmaceuticals can be queried (executeAction)
+     Test Passed.
+
+     na382: PHARMACEUTICALS can be queried (executeAction)
+     Test Passed.
+
+     na383: pharmaceuticals can be queried (executeAction)
+     Test Passed.
+
+     na384: Real Estate Investment Trusts can be queried (executeAction)
+     Test Passed.
+
+     na385: REAL ESTATE INVESTMENT TRUSTS can be queried (executeAction)
+     Test Passed.
+
+     na386: real estate investment trusts can be queried (executeAction)
+     Test Passed.
+
+     na387: Retail Hospitality can be queried (executeAction)
+     Test Passed.
+
+     na388: RETAIL HOSPITALITY can be queried (executeAction)
+     Test Passed.
+
+     na389: retail hospitality can be queried (executeAction)
+     Test Passed.
+
+     na390: Software and Computer Services can be queried (executeAction)
+     Test Passed.
+
+     na391: SOFTWARE AND COMPUTER SERVICES can be queried (executeAction)
+     Test Passed.
+
+     na392: software and computer services can be queried (executeAction)
+     Test Passed.
+
+     na393: Support Services can be queried (executeAction)
+     Test Passed.
+
+     na394: SUPPORT SERVICES can be queried (executeAction)
+     Test Passed.
+
+     na395: support services can be queried (executeAction)
+     Test Passed.
+
+     na396: Tobacco can be queried (executeAction)
+     Test Passed.
+
+     na397: TOBACCO can be queried (executeAction)
+     Test Passed.
+
+     na398: tobacco can be queried (executeAction)
+     Test Passed.
+
+     na399: Travel and Leisure can be queried (executeAction)
+     Test Passed.
+
+     na400: TRAVEL AND LEISURE can be queried (executeAction)
+     Test Passed.
+
+     na401: travel and leisure can be queried (executeAction)
+     Test Passed.
+
+
+
+-------------------------
+Overall Results
+-------------------------
+Tests Passed: 437
+Tests Failed: 22
+
+-------------------------
+ChatBot
+-------------------------
+Tests Passed: 14
+Tests Failed: 2
+
+-------------------------
+DatabaseController
+-------------------------
+Tests Passed: 17
+Tests Failed: 6
+
+-------------------------
+Names (Natural Language)
+-------------------------
+Tests Passed: 390
+Tests Failed: 12
+
+-------------------------
+Stocks and Sectors
+-------------------------
+Tests Passed: 16
+Tests Failed: 2
